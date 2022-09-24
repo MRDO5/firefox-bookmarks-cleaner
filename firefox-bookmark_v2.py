@@ -71,9 +71,9 @@ def get_url_request(url, broken_url):
 			cod_answer = resp.status_code
 			if cod_answer != 200:
 				broken_url.append(url)
-            elif cod_answer == 301 or cod_answer == 302:
-                pass
-            elif cod_answer == 404:
+			elif cod_answer == 301 or cod_answer == 302:
+				pass
+			elif cod_answer == 404:
 				broken_url.append(url)
 			#answer = resp.status_code
 			#print(answer)
